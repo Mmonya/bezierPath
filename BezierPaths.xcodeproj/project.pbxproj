@@ -11,6 +11,7 @@
 		096A8CCC20C9D25100D25B20 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 096A8CCB20C9D25100D25B20 /* ViewController.swift */; };
 		096A8CCE20C9D25100D25B20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 096A8CCD20C9D25100D25B20 /* Assets.xcassets */; };
 		096A8CD120C9D25100D25B20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 096A8CCF20C9D25100D25B20 /* Main.storyboard */; };
+		3720F5CC20F75B4A002C0BFF /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3720F5CB20F75B4A002C0BFF /* MainWindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,9 @@
 		096A8CD020C9D25100D25B20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		096A8CD220C9D25100D25B20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		096A8CD320C9D25100D25B20 /* BezierPaths.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BezierPaths.entitlements; sourceTree = "<group>"; };
+		3720F5CB20F75B4A002C0BFF /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		3720F5CE20F77A5F002C0BFF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3720F5D020F77A72002C0BFF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +43,7 @@
 			children = (
 				096A8CC820C9D25100D25B20 /* BezierPaths */,
 				096A8CC720C9D25100D25B20 /* Products */,
+				3720F5CD20F77A5F002C0BFF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,12 +60,22 @@
 			children = (
 				096A8CC920C9D25100D25B20 /* AppDelegate.swift */,
 				096A8CCB20C9D25100D25B20 /* ViewController.swift */,
+				3720F5CB20F75B4A002C0BFF /* MainWindowController.swift */,
 				096A8CCD20C9D25100D25B20 /* Assets.xcassets */,
 				096A8CCF20C9D25100D25B20 /* Main.storyboard */,
 				096A8CD220C9D25100D25B20 /* Info.plist */,
 				096A8CD320C9D25100D25B20 /* BezierPaths.entitlements */,
 			);
 			path = BezierPaths;
+			sourceTree = "<group>";
+		};
+		3720F5CD20F77A5F002C0BFF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3720F5D020F77A72002C0BFF /* AppKit.framework */,
+				3720F5CE20F77A5F002C0BFF /* Cocoa.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +151,7 @@
 			files = (
 				096A8CCC20C9D25100D25B20 /* ViewController.swift in Sources */,
 				096A8CCA20C9D25100D25B20 /* AppDelegate.swift in Sources */,
+				3720F5CC20F75B4A002C0BFF /* MainWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
