@@ -10,4 +10,9 @@ import Foundation
 
 class AppStateModel {
     
+    private init() {}
+
+    static let `default` = AppStateModel()
+    let topBarStateModel = TopBarStateModel()
+    
 }

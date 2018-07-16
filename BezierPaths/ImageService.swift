@@ -8,10 +8,11 @@
 
 import Cocoa
 
-extension NSImage.Name {
-    
-    static let leftPanelTopBarIconName = NSImage.Name("leftPanelTopBarIcon")
-    
+fileprivate extension NSImage.Name {
+    static let leftPanelTopBarIconName = NSImage.Name("LeftPanelTopBarIcon")
+    static let leftPanelTopBarIconPushedName = NSImage.Name("LeftPanelTopBarIconPushed")
+    static let rightPanelTopBarIconName = NSImage.Name("RightPanelTopBarIcon")
+    static let rightPanelTopBarIconPushedName = NSImage.Name("RightPanelTopBarIconPushed")
 }
 
 extension ImageService {
@@ -31,11 +32,17 @@ extension ImageService {
 
 class ImageService {
     
-    func image(identifier: ImageService.ImageIdentifier) -> NSImage? {
+    class func image(identifier: ImageService.ImageIdentifier) -> NSImage? {
         var result : NSImage? = nil
         switch identifier {
         case .leftPanelTopBarIcon:
             result = NSImage(named: .leftPanelTopBarIconName)
+        case .leftPanelTopBarIconPushed:
+            result = NSImage(named: .leftPanelTopBarIconPushedName)
+        case .rightPanelTopBarIcon:
+            result = NSImage(named: .rightPanelTopBarIconName)
+        case .rightPanelTopBarIconPushed:
+            result = NSImage(named: .rightPanelTopBarIconPushedName)
         default:
             break
         }
